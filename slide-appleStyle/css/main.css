@@ -1,0 +1,23 @@
+/*-------全局-------*/
+*{margin: 0;padding: 0;}
+.icon { width: 20px; height: 40px; vertical-align: -0.15em; fill: currentColor; overflow: hidden; }
+
+/*-------窗口部分-------*/
+section.mainContainer{width: 100%;}
+
+	/*---展示容器---*/
+div.slideContainer{width:400px;overflow: hidden;position: relative;margin: 150px auto 0;}
+
+	/*---图片容器---*/
+div.slideContainer>.imgContainer{width: 400px;display: flex;transition: all 0.5s;}
+div.slideContainer>.imgContainer>img{display: block;}
+
+	/*-----按钮-----*/
+div.slideContainer>.button{position: absolute;top: 50%;margin-top: -20px;background-color: rgba(255,255,255,0.5);cursor: pointer;width: 20px; height: 40px;}
+div.button#pre{left: 15px;}
+div.button#next{right: 15px;}
+
+/*-------页码部分-------*/
+div.pageContainer{display: flex;margin:15px auto 0;width: 200px;}
+div.pageContainer>.pages{width: 40px;height: 30px;box-sizing: border-box;border: 2px solid #FFF;cursor: pointer;}
+div.pageContainer>.pages>img{width: 100%;}
